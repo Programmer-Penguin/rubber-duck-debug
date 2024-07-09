@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rubber Duck</title>
+        <link rel="icon" type="image/x-icon" href="duck.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="top_stuff">
+            <div class="channel_search">
+                <form action="https://www.youtube.com/@ProgrammerPenguin/search?" method="get" target="_blank">
+                    <input name="query" placeholder="search my youtube vids">
+                    <button class="top_stuff_buttons" type="submit">Search</button>
+                </form>
+            </div>
+            <details id="theme_menu" class="theme_menu">
+                <summary for="theme_menu">Themes</summary>
+                <div>
+                    <input id="light_radio" type="radio" name="theme" value="Light">
+                    <label for="light_radio" style="color: darkgrey;">Light</label><br>
+
+                    <input id="dark_radio" type="radio" name="theme" value="Dark">
+                    <label for="dark_radio">Dark</label><br>
+                    <button id="change_theme_button" class="top_stuff_buttons" onclick="change_theme()">Change?</button>
+                </div>
+                <br>
+            </details>
+        </div>
+        <!-- <details class="pages_menu">
+            <summary>pages</summary>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="vowel.html">Vowel Counter</a></li>
+                    <li><a href="fizzbuzz.html">Fizzbuzz</a></li>
+                </ul>
+            </nav>
+        </details> -->
+        <h1 style="color: blue;">
+            <header>
+                <strong>welcome to the duck debugger website</strong>
+            </header>
+        </h1>
+    </body>
+</html>
