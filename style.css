@@ -169,6 +169,18 @@ ul li a:hover
     color: darkorange;
 }
 
+
+.query_box
+{
+    width: 500px;
+    height: 98.6px;
+    background-color: wheat;
+    padding: 1em;
+    border-radius: 10px;
+    border: 6px solid rgb(251, 220, 162);
+    resize: none;
+}
+
 .websites_menu
 {
     color: grey;
@@ -176,33 +188,20 @@ ul li a:hover
     font-size: calc(18px + 0.390625vw);
 }
 
-.query_box
-{
-    width: 300px;
-    height: 50px;
-    background-color: wheat;
-    padding: 1em;
-    border-radius: 10px;
-    border: 6px solid transparent;
-    size: 20;
-    resize: none;
-}
-
-
 .websites_menu>summary 
 {
-list-style: none;
+    list-style: none;
 }
 .websites_menu>summary::-webkit-details-marker 
 {
     display: none
 }
 
-.websites_menu>summary::after
+.websites_menu>summary::before
 {
-    content: ' ◀';
+    content: '▶';
 }
-.websites_menu>[open]>summary:after
+.websites_menu[open]>summary::before
 {
     content: "▼";
 }

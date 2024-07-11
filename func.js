@@ -92,7 +92,7 @@ const query_box = document.querySelector("textarea");
 
 function handleResize()
 {
-    this.style.height = "auto";
+    this.style.height = "70px";
     this.style.height = this.scrollHeight + "px";
 }
 query_box.addEventListener("input", handleResize);
@@ -142,7 +142,7 @@ async function quack()
         let audio = new Audio("quack.mp3");
         audio.volume = 0.3;
         audio.play();
-        await sleep(250);
+        await sleep(280);
     }
     query_box.value = "";
 }
