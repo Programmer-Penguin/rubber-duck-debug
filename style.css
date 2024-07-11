@@ -19,9 +19,9 @@ a:hover
 button
 {
     font-size: 50%;
-    color: blue;
-    border-color: rgb(9, 12, 55);
-    background-color: black;
+    color: black;
+    border-color: lightyellow;
+    background-color: beige;
 }
 
 
