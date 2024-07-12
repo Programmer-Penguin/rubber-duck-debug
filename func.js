@@ -146,8 +146,8 @@ async function quack()
     }
     query_box.value = "";
 }
-document.addEventListener('DOMContentLoaded', async function()
-{
-    await sleep(12000);
-    document.getElementById("ddb_info").innerHTML = "";
-});
+// document.addEventListener('DOMContentLoaded', async function()
+// {
+//     await sleep(12000);
+//     document.getElementById("ddb_info").innerHTML = "";
+// });
