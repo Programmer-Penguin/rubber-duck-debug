@@ -135,17 +135,20 @@ function submit()
 
 async function quack()
 {
-    let iterate = Math.floor(Math.random() * 5) + 1;
+    let iterate = Math.floor(Math.random() * 10) + 1;
     for (let i = 1; i <= iterate; i++)
     {
         query_box.value = "";
         let audio = new Audio("quack.mp3");
         audio.volume = 0.3;
         audio.play();
-        await sleep(280);
+        await sleep(150);
     }
     query_box.value = "";
 }
+
+// duck info remov after 12 seconds ⬇
+
 // document.addEventListener('DOMContentLoaded', async function()
 // {
 //     await sleep(12000);
