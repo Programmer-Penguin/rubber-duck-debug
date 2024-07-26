@@ -113,8 +113,6 @@ input
 .top_stuff 
 {
     width:100%;
-    display: flex;
-    justify-content:space-between;
 }
 
 .theme_menu
@@ -122,11 +120,6 @@ input
     color: grey;
     text-align: left;
     font-size: calc(25px + 0.390625vw);
-}
-
-.websites_menu
-{
-    order:1;
 }
 
 .pages_menu
@@ -172,7 +165,7 @@ ul li a:hover
 
 .query_box
 {
-    width: 500px;
+    width: calc(350px + 0.390625vw);
     height: 98.6px;
     background-color: wheat;
     padding: 1em;

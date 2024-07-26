@@ -34,19 +34,6 @@
     <body>
         <header>
             <div class="top_stuff">
-                    <details id="theme_menu" class="theme_menu">
-                    <summary for="theme_menu">Themes</summary>
-                    <div>
-                        <input id="light_radio" type="radio" name="theme" value="Light">
-                        <label for="light_radio" style="color: darkgrey;">Light</label><br>
-
-                        <input id="dark_radio" type="radio" name="theme" value="Dark">
-                        <label for="dark_radio">Dark</label><br>
-                        <button id="change_theme_button" class="top_stuff_buttons" onclick="change_theme()">Change?</button>
-                    </div>
-                    <br>
-                </details>
-            </div>
             <details class="pages_menu">
                 <summary>pages</summary>
                 <nav>
@@ -79,21 +66,11 @@
                 </h4>
             </div>
             <h1 style="color: blue;">
-                <img class="duck_pfp" src="duck.png" alt="Description of the image" width="190" height="190"> <br>
-                <textarea id="query_box" class="query_box" placeholder="type your programming query." autofocus></textarea><br>
+                <img class="duck_pfp" id="duck_pfp" src="duck.png" alt="Description of the image" width="190" height="190"> <br>
+                <textarea id="query_box" class="query_box" placeholder="type your programming query              CTRL+Enter to submit." autofocus></textarea><br>
                 <button onclick="submit()">Submit</button>
             </h1>
         </main>
-        <footer>
-            <!-- <h2>
-                Rubber Duck Debugging
-            </h2>
-            <h3>
-                A concept in computer science which states if you have a bug in your code <br>
-                but no one to ask for help, you could talk to an inanimate object <br>
-                and explain your code line-by-line and eventually you'll find the bug! <br>
-            </h3> -->
-        </footer>
     </body>
     <script src="func.js"></script>
 </html>
