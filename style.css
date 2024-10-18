@@ -4,18 +4,6 @@ body
     background-color: beige
 }
 
-a
-{
-    color: red;
-    text-decoration: none;
-}
-
-a:hover
-{
-    text-decoration: underline;
-    color: green;
-}
-
 button
 {
     font-size: 50%;
@@ -24,79 +12,12 @@ button
     background-color: beige;
 }
 
-
-input
+button:hover
 {
-    background-color: black;
-    color: white;
-}
-
-.video-container 
-{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    margin: 0; /* Remove any margin */
-}
-
-.video-container iframe 
-{
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (min-width: 768px) 
-{
-    /* For screens wider than 768px (PC) */
-    .video-container iframe {
-        width: 20%;
-        height: auto
-    }
-}
-
-@media screen and (max-width: 767px) 
-{
-    /* For screens up to 767px (mobile) */
-    .video-container iframe 
-    {
-        width: 70%;
-        height: auto;
-    }
-}
-
-.rainbow 
-{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 32px;
-    font-family: monospace;
-    letter-spacing: 5px;
-}
-
-.rainbow_text_animated 
-{
-    background: linear-gradient(to right, red, orange, yellow, #00ff00, blue, indigo, violet); 
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbow_animation 1s infinite;
-    background-size: 400% 100%;
-}
-
-@keyframes rainbow_animation 
-{
-    0%,100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
+    cursor: pointer;
+    border-color: rgb(241, 241, 174);
+    border-radius: 20%;
+    font-size: 55%;
 }
 
 .duck_pfp
@@ -104,23 +25,10 @@ input
     border: 5px solid yellow;
     border-bottom-left-radius: 70%;
     border-bottom-right-radius: 70%;
-    border-top-left-radius: 80%;
-    border-top-right-radius: 80%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 90%;
 }
 
-
-
-.top_stuff 
-{
-    width:100%;
-}
-
-.theme_menu
-{
-    color: grey;
-    text-align: left;
-    font-size: calc(25px + 0.390625vw);
-}
 
 .pages_menu
 {
@@ -129,26 +37,10 @@ input
     font-size: calc(20px + 0.390625vw);
 }
 
-.top_stuff_buttons
-{
-    font-size: calc(8px + 0.390625vw);
-    color: grey;
-    border-color: black;
-    background-color: black;
-    border-radius: 78%;
-    display: table-cell;
-}
-
 *
 {
     margin: 0;
     padding: 0;
-}
-
-ul li
-{
-    list-style: none;
-
 }
 
 ul li a
